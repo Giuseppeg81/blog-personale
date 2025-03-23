@@ -64,3 +64,38 @@ button {
 button:hover {
     background-color: #ccd5ae;
 }
+
+/* dark mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #44151b;
+    color: white;
+}
+
+.dark-mode nav ul li a {
+    color: white;
+}
+
+.dark-mode nav ul li a:hover {
+    background-color: #7a2531;
+}
+
+.dark-mode .card {
+    background-color: #361016;
+}
+
+.dark-mode button {
+    background-color: #7a2531;
+    color: white;
+}
+
+
+.dark-mode button:hover {
+    background-color: #6c212c;
+    color: beige;
+
+}
