@@ -4,6 +4,12 @@
     margin: 0;
 
 }
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.fuck{
+    text-decoration: line-through;
+}
 
 body {
     background-color: #e9edc9;
@@ -11,12 +17,16 @@ body {
 
 nav {
     background-color: #ccd5ae;
-    padding: 20px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 20px 40px;
     justify-content: center;
 }
 
@@ -30,6 +40,7 @@ nav ul li a {
     color: #333;
     padding: 8px 12px;
     border-radius: 6px;
+    border: solid 1px green;
 }
 
 nav ul li a:hover {
@@ -43,13 +54,33 @@ main {
 }
 
 .card {
-    background-color: white;
+    background-color: beige;
     padding: 10px;
     border-radius: 6px;
     margin: 20px auto;
     max-width: 600px;
     line-height: 1.6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.preview ul {
+    list-style-type: none;
+    padding: 0;
+}
+.preview ul li {
+    margin-bottom: 10px;
+}
+.preview ul li a {
+    text-decoration: none;
+    color: #d4a373;
+}
+.preview ul li a:hover {
+    text-decoration: underline;
 }
 
 button {
@@ -98,4 +129,32 @@ button:hover {
     background-color: #6c212c;
     color: beige;
 
+}
+.dark-mode .article-detail{
+    background-color: #44151b;
+}
+.article-detail {
+    max-width: 800px;
+    margin: 30px auto;
+    padding:20px;
+    line-height: 1.6
+}
+.article-detail .cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.article-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.article-detail p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.article-detail p:last-child {
+    margin-bottom: 0;
 }
