@@ -7,6 +7,9 @@
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+h2{
+    padding: 20px 20px;
+}
 .fuck{
     text-decoration: line-through;
 }
@@ -52,9 +55,16 @@ main {
     text-align: center;
     margin: 30px;
 }
+.intro {
+    padding: 10px 200px;
+}
+
+
+
+
 
 .card {
-    background-color: beige;
+    background-color: #d4a373;
     padding: 10px;
     border-radius: 6px;
     margin: 20px auto;
@@ -68,19 +78,32 @@ main {
     border-radius: 8px;
     margin-bottom: 10px;
 }
-.preview ul {
-    list-style-type: none;
-    padding: 0;
+.card button {
+    border: solid 1px #ccd5ae;;
 }
-.preview ul li {
-    margin-bottom: 10px;
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+
+}   
+.article-card{
+    background-color: blanchedalmond;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px #ccd5ae;
 }
-.preview ul li a {
+.article-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px #ccd5ae;
+
+}
+.article-card h3 a {
     text-decoration: none;
-    color: #d4a373;
-}
-.preview ul li a:hover {
-    text-decoration: underline;
+    color:chocolate
 }
 
 button {
@@ -95,6 +118,34 @@ button {
 button:hover {
     background-color: #ccd5ae;
 }
+
+.article-detail {
+    max-width: 800px;
+    margin: 30px auto;
+    padding:20px;
+    line-height: 1.6;
+    background-color: #d4a373;
+}
+.article-detail .cover-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.article-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.article-detail p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.article-detail p:last-child {
+    margin-bottom: 0;
+}
+
 
 /* dark mode */
 .dark-mode {
@@ -133,28 +184,20 @@ button:hover {
 .dark-mode .article-detail{
     background-color: #44151b;
 }
-.article-detail {
-    max-width: 800px;
-    margin: 30px auto;
-    padding:20px;
-    line-height: 1.6
+.dark-mode .article-card{
+    background-color: #44151b;
+;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px #ccd5ae;
 }
-.article-detail .cover-image {
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-.article-detail h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
+.article-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px #ccd5ae;
 
-.article-detail p {
-    font-size: 1rem;
-    margin-bottom: 15px;
 }
-
-.article-detail p:last-child {
-    margin-bottom: 0;
+.article-card h3 a {
+    text-decoration: none;
+    color:chocolate
 }
