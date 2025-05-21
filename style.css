@@ -17,6 +17,7 @@ h2{
 body {
     background-color: #e9edc9;
 }
+/* navbar */
 
 nav {
     background-color: #ccd5ae;
@@ -51,6 +52,8 @@ nav ul li a:hover {
     background-color: #e9edc9;
 }
 
+/*fine navabr */
+
 main {
     text-align: center;
     margin: 30px;
@@ -61,7 +64,7 @@ main {
 
 
 
-
+/* Blog / articoli */
 
 .card {
     background-color: #d4a373;
@@ -81,6 +84,20 @@ main {
 .card button {
     border: solid 1px #ccd5ae;;
 }
+button {
+    background-color: #d4a373;
+    border: 0px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #ccd5ae;
+}
+
+/* main page */
 .grid-container{
     display: grid;
     grid-template-columns: repeat(autofit, minmax(250px, 1fr));
@@ -105,19 +122,25 @@ main {
     text-decoration: none;
     color:chocolate
 }
-
-button {
-    background-color: #d4a373;
-    border: 0px;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px;
+.article-card h3 a:hover {
+    text-decoration: underline;
+    color: darkred;
+}
+.article-card .imgpre {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+.imgpre{
+    transition: transform 0.3s ease;
+    
+}
+.imgpre:hover{
+    transform: scale(1.03)
 }
 
-button:hover {
-    background-color: #ccd5ae;
-}
+/* articolo 1 - 2 - 3 etc */
 
 .article-detail {
     max-width: 800px;
