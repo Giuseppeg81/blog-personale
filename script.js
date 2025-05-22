@@ -21,3 +21,11 @@ if (localStorage.getItem("theme") === "dark") {
 }
 updateButtonText()
 
+//welcome message
+
+const mess = document.getElementById("welcome-message");
+mess.innerHTML = "👋 Benvenuto nel mio blog, Giuseppe!";
+
+setTimeout(() => {
+  mess.style.display ="none"
+}, 5000)

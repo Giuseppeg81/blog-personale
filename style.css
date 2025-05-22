@@ -17,6 +17,16 @@ h2{
 body {
     background-color: #e9edc9;
 }
+
+/* welcome message */
+.banner {
+    background-color: beige;
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid 1px green;
+    color: red;
+}
+ 
 /* navbar */
 
 nav {
